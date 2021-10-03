@@ -12,6 +12,8 @@ Tested only zsh on macOS , so if you want to use script for Windows . Please reg
 - DockerCompose
 - AWS CLI
 
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-mac.html
+
 ### Usage
 
 #### please setting REGION in aws cli and cloudformation.sh
