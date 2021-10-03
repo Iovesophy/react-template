@@ -36,7 +36,7 @@ $ make
 $ make build
 ```
 
-2. run phse
+2. run phase
 
 ```bash
 $ make run
