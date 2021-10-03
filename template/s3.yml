@@ -10,11 +10,6 @@ Resources:
     Properties:
       BucketName: !Sub ${S3BucketName}
       AccessControl: Private
-      LifecycleConfiguration:
-        Rules:
-          - Id: NoncurrentVersionExpiration
-            Status: Enabled
-            NoncurrentVersionExpirationInDays: 45
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: false
