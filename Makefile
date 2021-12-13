@@ -10,6 +10,10 @@ appbuild:
 
 .PHONY: run
 run: build
+	docker compose run --rm node sh -c "npm install -g create-react-app && create-react-app $(APP)"
+
+.PHONY: run-ts
+run-ts: build
 	docker compose run --rm node sh -c "npm install -g create-react-app && create-react-app $(APP) --template typescript"
 
 .PHONY: build
