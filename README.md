@@ -44,6 +44,11 @@ $ make build
 $ make run
 ```
 
+※ typescript version
+```bash
+$ make run-ts
+```
+
 3. to aws deploy phase
 
 ```bash
