@@ -4,11 +4,13 @@ BUCKET_RM:=
 
 all: run appbuild deploy
 
+.PHONY: appbuild
 appbuild:
 	docker compose up appbuild
 
+.PHONY: run
 run: build
-	docker compose run --rm node sh -c "npm install -g create-react-app && create-react-app $(APP)"
+	docker compose run --rm node sh -c "npm install -g create-react-app && create-react-app $(APP) --template typescript"
 
 .PHONY: build
 build:
