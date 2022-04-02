@@ -6,23 +6,23 @@ all: run appbuild deploy
 
 .PHONY: appbuild
 appbuild:
-	docker compose up appbuild
+	docker-compose up appbuild
 
 .PHONY: run
 run: build
-	docker compose run --rm node sh -c "npx create-react-app $(APP)"
+	docker-compose run --rm node sh -c "npx create-react-app $(APP)"
 
 .PHONY: run-ts
 run-ts: build
-	docker compose run --rm node sh -c "npx create-react-app --template typescript $(APP)"
+	docker-compose run --rm node sh -c "npx create-react-app --template typescript $(APP)"
 
 .PHONY: build
 build:
-	docker compose build
+	docker-compose build
 
 .PHONY: up
 up:
-	docker compose up node
+	docker-compose up node
 
 .PHONY: deploy
 deploy:
